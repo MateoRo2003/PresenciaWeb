@@ -11,8 +11,9 @@
     --color-bg-projects: #ecf2f6;
     --max-width: 1320px;
     --color-bg-dark: #27272E;
-    --color-stats-description:#99A1AA;
-    --color-hover-stat:#303035
+    --color-stats-description: #99A1AA;
+    --color-hover-stat: #303035;
+    --color-borders: #e3e6e9;
 
 
 }
@@ -669,21 +670,21 @@ formas detras de servicios */
 
 /* SECCION ESTADISTICAS */
 
-.layout__stats{
+.layout__stats {
     background-color: var(--color-bg-dark);
     padding: 14rem 11rem;
 }
 
-.stats__container{
+.stats__container {
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
-.stats__header{
+.stats__header {
     text-align: center;
 }
 
-.stats__title{
+.stats__title {
     color: var(--color-secundary);
     font-size: 6.4rem;
     font-weight: 500;
@@ -692,7 +693,7 @@ formas detras de servicios */
 }
 
 
-.stats__subtitle{
+.stats__subtitle {
     color: var(--color-subtitle);
     text-transform: capitalize;
     font-size: 2rem;
@@ -700,7 +701,7 @@ formas detras de servicios */
     margin-bottom: 1.5rem;
 }
 
-.stats__description{
+.stats__description {
     font-size: 2rem;
     width: 60%;
     margin: 0 auto;
@@ -708,13 +709,13 @@ formas detras de servicios */
     color: var(--color-stats-description);
 }
 
-.stats__progress{
+.stats__progress {
     display: flex;
     flex-direction: row;
     gap: 3rem;
 }
 
-.stats__stat{
+.stats__stat {
     width: 25%;
     text-align: center;
     padding: 7rem 6rem;
@@ -722,20 +723,21 @@ formas detras de servicios */
     border: transparent
 }
 
-.stats__stat:hover{
+.stats__stat:hover {
     background: linear-gradient(180deg, var(--color-bg-dark), var(--color-hover-stat));
     border: 1px solid var(--color-hover-stat);
 }
-.stat__icon{
+
+.stat__icon {
     margin-bottom: 2rem;
 }
 
-.stat__icon>img{
+.stat__icon>img {
     margin: 0 auto;
     text-align: center;
 }
 
-.stat__count{
+.stat__count {
     display: inline-block;
     font-size: 6.4rem;
     font-weight: 500;
@@ -745,7 +747,7 @@ formas detras de servicios */
     text-align: center;
 }
 
-.stat__title{
+.stat__title {
     text-align: center;
     color: var(--color-secundary);
     font-size: 2rem;
@@ -756,24 +758,24 @@ formas detras de servicios */
 
 /* SECCION REVIEWS */
 
-.layout__reviews{
+.layout__reviews {
     position: relative;
     z-index: 1;
     padding-top: 14rem;
     padding-bottom: 11rem;
 }
 
-.reviews__grid{
+.reviews__grid {
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
-.reviews__header{
+.reviews__header {
     text-align: left;
     margin-bottom: 6rem;
 }
 
-.reviews__subtitle{
+.reviews__subtitle {
     color: var(--color-subtitle);
     text-transform: capitalize;
     font-size: 2rem;
@@ -781,7 +783,7 @@ formas detras de servicios */
     margin-bottom: 1.5rem;
 }
 
-.reviews__title{
+.reviews__title {
     color: var(--color-title);
     font-size: 6.7rem;
     font-weight: 500;
@@ -789,51 +791,52 @@ formas detras de servicios */
     margin-bottom: 1rem;
 }
 
-.reviews__description{
+.reviews__description {
     margin-top: 3rem;
     width: 50%;
     font-size: 2rem;
 }
 
-.reviews__container{
+.reviews__container {
     display: flex;
     gap: 3rem;
 }
 
-.reviews__review{
+.reviews__review {
     padding-top: 5rem;
     padding-bottom: 3rem;
 }
-.review__company{
+
+.review__company {
     display: inline-block;
     margin-bottom: 3rem;
 
 }
 
-.review__description{
+.review__description {
     font-size: 2.4rem;
     line-height: 1.2;
     color: var(--color-bg-dark);
     margin-bottom: 4rem;
 }
 
-.review__author{
+.review__author {
     display: flex;
     flex-direction: row;
     gap: 2rem;
     align-items: center;
 }
 
-.author__container-img{
+.author__container-img {
     border-radius: 3.5rem;
     overflow: hidden;
 }
 
-.author__content{
+.author__content {
     flex: 1;
 }
 
-.author__name{
+.author__name {
     display: block;
     font-size: 1.7rem;
     font-weight: bold;
@@ -842,17 +845,179 @@ formas detras de servicios */
 
 }
 
-.author__description{
+.author__description {
     display: block;
     font-size: 1.5rem;
     color: var(--color-stats-description);
     opacity: 0.7;
 }
 
-.review-shapes__item{
+.review-shapes__item {
     position: absolute;
     z-index: -1;
     pointer-events: none;
     top: 18%;
     right: 26%;
 }
+
+/* seccion noticias */
+.layout__news {
+    position: relative;
+    z-index: 1;
+    padding: 14rem 0;
+
+}
+
+.news__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.news__header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.news__title {
+    color: var(--color-title);
+    font-size: 6.7rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+}
+
+.news__subtitle {
+    color: var(--color-subtitle);
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.news__description {
+    /* margin-top: 3rem; */
+    width: 50%;
+    text-align: center;
+    margin: 3rem 0;
+    margin: 0 auto;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 4rem;
+    font-size: 2rem;
+}
+
+
+.news__list {
+    display: flex;
+
+}
+
+.news__new {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* padding: 4rem 4rem 2rem 0; */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-right: 2rem;
+    padding-left: 0;
+    border-top: 1px solid var(--color-borders);
+    border-bottom: 1px solid var(--color-borders);
+    transition: all 300ms ease-in-out;
+}
+
+
+.new__container-img {
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+.new__img {
+    border-radius: 3rem;
+    transition: all 300ms ease-in-out;
+}
+
+
+.news__new:hover {
+    border-top-color: var(--color-primary);
+}
+
+.new__img:hover {
+    transform: scale(1.1);
+}
+
+
+.news__new:last-child {
+    border-left: 1px solid var(--color-borders);
+    padding-left: 2.5rem;
+}
+
+.new__content {
+    flex: 1;
+}
+
+.new__title{
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-title);
+    margin-bottom: 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.new__description{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--color-text-description);
+    margin-bottom: 3rem;
+}
+
+
+.new__title:hover, .new__more:hover {
+    color: var(--color-primary);
+}
+
+.new__more{
+    font-weight: 500;
+    color: var(--color-hover-dark);
+    display: inline-block;
+    font-size: 1.7rem;
+    transition: all 300ms ease-in-out;
+}
+
+.new__icon{
+    font-size: 1.2rem;
+    vertical-align: middle;
+
+}
+
+ .new-shapes__item{
+    position: absolute;
+    z-index: -1;
+} 
+
+/* .news__new-shapes{
+    position: absolute;
+    z-index: -1;
+} */
+
+.new-shapes--shape1{
+    top: 14rem;
+    left: 31.5rem;
+}
+.new-shapes--shape2{
+    top: 14rem;
+    right: 0;
+}
+.new-shapes--shape3{
+    bottom: 8rem;
+    left: 0;
+}
+
+.new-shapes--shape4{
+    bottom: 6rem;
+    right: 16rem;
+}
+
+/* seccion contacto */
+
